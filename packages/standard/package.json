@@ -1,0 +1,31 @@
+{
+  "name": "@daniel15/standard",
+  "version": "1.0.0",
+  "description": "My standard configurations for ESLint, Prettier, etc.",
+  "license": "MIT",
+  "author": "Daniel Lo Nigro <npm@d.sb>",
+  "type": "module",
+  "exports": {
+    "./eslint": "./eslint.ts",
+    "./prettier": "./prettier.ts"
+  },
+  "files": [
+    "tsconfig/standard.json",
+    "tsconfig/node.json"
+  ],
+  "dependencies": {
+    "@eslint/compat": "^2.0.2",
+    "@eslint/css": "^0.14.1",
+    "@eslint/json": "^1.0.0",
+    "@tsconfig/node24": "^24.0.4",
+    "@tsconfig/strictest": "^2.0.8",
+    "eslint-config-prettier": "^10.1.8",
+    "jiti": "^2.6.1"
+  },
+  "peerDependencies": {
+    "eslint": "9.x",
+    "jiti": "2.x",
+    "prettier": "3.x",
+    "typescript-eslint": "8.x"
+  }
+}

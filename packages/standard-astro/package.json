@@ -1,0 +1,16 @@
+{
+  "name": "@daniel15/standard-astro",
+  "version": "1.0.0",
+  "description": "My standard configurations for ESLint, Prettier, etc. for projects that use Astro",
+  "license": "MIT",
+  "author": "Daniel Lo Nigro <npm@d.sb>",
+  "type": "module",
+  "exports": {
+    "eslint": "./eslint.ts",
+    "prettier": "./prettier.ts"
+  },
+  "dependencies": {
+    "@daniel15/standard": "^1.0.0",
+    "eslint-plugin-astro": "^1.5.0"
+  }
+}

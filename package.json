@@ -1,0 +1,23 @@
+{
+  "name": "@daniel15/standard",
+  "version": "1.0.0",
+  "description": "My standard configurations for ESLint, Prettier, etc.",
+  "license": "MIT",
+  "author": "Daniel Lo Nigro <npm@d.sb>",
+  "type": "module",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "prettier": "3.8.1",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.54.0",
+    "@types/node": "^25.2.1"
+  },
+  "scripts": {
+    "lint": "prettier --check . && tsc --noEmit && eslint",
+    "lint-fix": "prettier --write . && eslint --fix"
+  }
+}
