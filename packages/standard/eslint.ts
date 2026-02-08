@@ -39,5 +39,10 @@ export function getStandardESLintConfig(settings: Settings): ConfigWithExtendsAr
       },
     },
     prettier,
+    {
+      rules: {
+        curly: ['error', 'all'],
+      },
+    },
   ];
 }
