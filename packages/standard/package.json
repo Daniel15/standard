@@ -7,7 +7,9 @@
   "type": "module",
   "exports": {
     "./eslint": "./eslint.ts",
-    "./prettier": "./prettier.ts"
+    "./prettier": "./prettier.ts",
+    "./tsconfig/node.json": "./tsconfig/node.json",
+    "./tsconfig/standard.json": "./tsconfig/standard.json"
   },
   "files": [
     "tsconfig/standard.json",
