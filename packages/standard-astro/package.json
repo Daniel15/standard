@@ -9,6 +9,9 @@
     "./eslint": "./eslint.ts",
     "./prettier": "./prettier.ts"
   },
+  "files": [
+    "**/*.ts"
+  ],
   "dependencies": {
     "@daniel15/standard": "^1.0.0",
     "astro-eslint-parser": "^1.2.2",

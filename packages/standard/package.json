@@ -12,8 +12,8 @@
     "./tsconfig/standard.json": "./tsconfig/standard.json"
   },
   "files": [
-    "tsconfig/standard.json",
-    "tsconfig/node.json"
+    "**/*.ts",
+    "tsconfig/*.json"
   ],
   "dependencies": {
     "@eslint/compat": "^2.0.2",
