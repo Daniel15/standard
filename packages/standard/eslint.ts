@@ -16,10 +16,14 @@ export type Settings = Readonly<{
   ignore?: string[];
 }>;
 
-export function getStandardESLintConfig(settings: Settings): ConfigWithExtendsArray {
+export function getStandardESLintConfig(
+  settings: Settings,
+): ConfigWithExtendsArray {
   const gitignoreFile = resolve(settings.baseDir, '.gitignore');
   return [
-    existsSync(gitignoreFile) ? includeIgnoreFile(resolve(settings.baseDir, '.gitignore')) : [],
+    existsSync(gitignoreFile)
+      ? includeIgnoreFile(resolve(settings.baseDir, '.gitignore'))
+      : [],
     settings.ignore != null ? globalIgnores(settings.ignore) : [],
     css.configs.recommended,
     json.configs.recommended,

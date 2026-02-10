@@ -1,15 +1,20 @@
-import {getStandardESLintConfig, type Settings} from '@daniel15/standard/eslint';
-import {ConfigWithExtendsArray} from '@eslint/config-helpers';
+import {
+  getStandardESLintConfig,
+  type Settings,
+} from '@daniel15/standard/eslint';
+import type {ConfigWithExtendsArray} from '@eslint/config-helpers';
 import astro from 'eslint-plugin-astro';
 import tseslint from 'typescript-eslint';
 
-export function getStandardESLintAstroConfig(settings: Settings): ConfigWithExtendsArray {
+export function getStandardESLintAstroConfig(
+  settings: Settings,
+): ConfigWithExtendsArray {
   return [
     ...getStandardESLintConfig({
       ...settings,
-      // Un-ignore virtual TypeScript files from <script> tags in Astro components.
-      // These are usually ignored in the .gitignore.
-      ignore: [...(settings.ignore ?? []), '!.astro/**/*.ts'],
+      // Ignore .astro, except for the virtual TypeScript files from <script> tags in Astro
+      // components.
+      ignore: [...(settings.ignore ?? []), '.astro', '!.astro/**/*.ts'],
     }),
 
     astro.configs.recommended,

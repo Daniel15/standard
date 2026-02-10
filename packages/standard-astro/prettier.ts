@@ -1,4 +1,4 @@
-import {Config} from 'prettier';
+import type {Config} from 'prettier';
 import {standardPrettierConfig} from '@daniel15/standard/prettier';
 
 export const standardPrettierAstroConfig: Config = {
