@@ -4,7 +4,13 @@
   "description": "My standard configurations for ESLint, Prettier, etc. for projects that use Astro",
   "license": "MIT",
   "author": "Daniel Lo Nigro <npm@d.sb>",
+  "private": false,
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Daniel15/standard.git",
+    "directory": "packages/standard-astro"
+  },
   "exports": {
     "./eslint": "./eslint.ts",
     "./prettier": "./prettier.ts"

@@ -5,6 +5,11 @@
   "license": "MIT",
   "author": "Daniel Lo Nigro <npm@d.sb>",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Daniel15/standard.git",
+    "directory": "packages/standard"
+  },
   "exports": {
     "./eslint": "./eslint.ts",
     "./prettier": "./prettier.ts",

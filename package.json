@@ -1,5 +1,5 @@
 {
-  "name": "@daniel15/standard",
+  "name": "@daniel15/standard-root",
   "version": "1.0.0",
   "description": "My standard configurations for ESLint, Prettier, etc.",
   "license": "MIT",
