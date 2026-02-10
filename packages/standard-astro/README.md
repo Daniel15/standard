@@ -1,4 +1,4 @@
-# @daniel15/standard
+# @daniel15/standard-astro
 
 This package contains opinionated, strict configs that I use in most of my Astro projects. Currently, it includes ESLint and Prettier.
 
