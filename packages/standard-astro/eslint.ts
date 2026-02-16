@@ -1,8 +1,9 @@
+import type {ConfigWithExtendsArray} from '@eslint/config-helpers';
+
 import {
   getStandardESLintConfig,
   type Settings,
 } from '@daniel15/standard/eslint';
-import type {ConfigWithExtendsArray} from '@eslint/config-helpers';
 import astro from 'eslint-plugin-astro';
 import tseslint from 'typescript-eslint';
 
@@ -27,8 +28,8 @@ export function getStandardESLintAstroConfig(
     // Disable type-checked rules in Astro components.
     // https://github.com/ota-meshi/eslint-plugin-astro/issues/447
     {
-      files: ['**/*.astro', '**/*.astro/*.ts'],
       extends: [tseslint.configs.disableTypeChecked],
+      files: ['**/*.astro', '**/*.astro/*.ts'],
       languageOptions: {
         parserOptions: {
           projectService: false,

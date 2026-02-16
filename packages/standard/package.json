@@ -1,6 +1,6 @@
 {
   "name": "@daniel15/standard",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "My standard configurations for ESLint, Prettier, etc.",
   "license": "MIT",
   "author": "Daniel Lo Nigro <npm@d.sb>",
@@ -27,6 +27,7 @@
     "@tsconfig/node24": "^24.0.4",
     "@tsconfig/strictest": "^2.0.8",
     "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-perfectionist": "^5.5.0",
     "jiti": "^2.6.1"
   },
   "peerDependencies": {
